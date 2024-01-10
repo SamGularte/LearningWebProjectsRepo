@@ -1,0 +1,101 @@
+@import "./variables";
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $primary;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $fonts;
+}
+
+.card {
+  border: 1px solid $neutralBlack;
+  border-radius: 1.6rem;
+  background-color: $neutralWhite;
+  box-shadow: 0.7rem 0.7rem $neutralBlack;
+  padding: 1.6rem;
+  width: 33rem;
+  font-size: 1.6rem;
+
+  .preview_img {
+    display: block;
+    width: 100%;
+    border-radius: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $neutralBlack;
+  }
+
+  .button {
+    background-color: $primary;
+    color: $neutralBlack;
+    border-radius: 0.5rem 0.8rem;
+    font-weight: bold;
+    padding: 0.8rem;
+  }
+
+  .button:hover {
+    background-color: $neutralWhite;
+    color: $primary;
+    padding: 0.5rem;
+    border: 0.3rem solid $primary;
+  }
+
+  .pub_date {
+    margin-top: 2.4rem;
+    margin-bottom: 1.6rem;
+    color: $neutralBlack;
+  }
+
+  .card_title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $neutralBlack;
+    margin-bottom: 1.6rem;
+  }
+
+  .card_title:hover {
+    color: $primary;
+  }
+
+  .card_description {
+    font-size: 1.6rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    color: $neutralGrey;
+  }
+
+  .profile_container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    p {
+      font-weight: bold;
+    }
+  }
+
+  .profile_pic {
+    width: 3.2rem;
+  }
+}
+
+@media (max-width: 944px) {
+  html {
+    font-size: 56.25%;
+  }
+}

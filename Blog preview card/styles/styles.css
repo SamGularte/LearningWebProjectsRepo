@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Figtree", sans-serif;
+}
+
+.card {
+  border: 1px solid hsl(0, 0%, 7%);
+  border-radius: 1.6rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0.7rem 0.7rem hsl(0, 0%, 7%);
+  padding: 1.6rem;
+  width: 33rem;
+  font-size: 1.6rem;
+}
+.card .preview_img {
+  display: block;
+  width: 100%;
+  border-radius: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+.card a {
+  text-decoration: none;
+  color: hsl(0, 0%, 7%);
+}
+.card .button {
+  background-color: hsl(47, 88%, 63%);
+  color: hsl(0, 0%, 7%);
+  border-radius: 0.5rem 0.8rem;
+  font-weight: bold;
+  padding: 0.8rem;
+}
+.card .button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(47, 88%, 63%);
+  padding: 0.5rem;
+  border: 0.3rem solid hsl(47, 88%, 63%);
+}
+.card .pub_date {
+  margin-top: 2.4rem;
+  margin-bottom: 1.6rem;
+  color: hsl(0, 0%, 7%);
+}
+.card .card_title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 7%);
+  margin-bottom: 1.6rem;
+}
+.card .card_title:hover {
+  color: hsl(47, 88%, 63%);
+}
+.card .card_description {
+  font-size: 1.6rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  color: hsl(0, 0%, 50%);
+}
+.card .profile_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card .profile_container p {
+  font-weight: bold;
+}
+.card .profile_pic {
+  width: 3.2rem;
+}
+
+@media (max-width: 944px) {
+  html {
+    font-size: 56.25%;
+  }
+}/*# sourceMappingURL=styles.css.map */
