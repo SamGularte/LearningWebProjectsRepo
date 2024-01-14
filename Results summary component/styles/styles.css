@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+/* Fonts */
+/* primary  */
+/* Gradients background  */
+/* Gradients circle  */
+/* Neutral  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.white {
+  color: hsl(0, 0%, 100%);
+}
+
+.gray {
+  color: hsl(224, 30%, 27%);
+}
+
+.lred {
+  color: hsl(0, 100%, 67%);
+}
+
+.redback {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.Oyellow {
+  color: hsl(39, 100%, 56%);
+}
+
+.yellowback {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.greenTeal {
+  color: hsl(166, 100%, 37%);
+}
+
+.greenback {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.cobaltBlue {
+  color: hsl(234, 85%, 45%);
+}
+
+.cobaltback {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.container {
+  width: 72rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container .result {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 3rem;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: hsl(241, 100%, 89%);
+}
+.container .result .circle {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  background-image: linear-gradient(0deg, hsla(241, 72%, 46%, 0), hsl(256, 72%, 46%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+}
+.container .result .circle h1 {
+  font-size: 6.5rem;
+  margin-bottom: -0.7rem;
+}
+.container .result h2 {
+  margin-bottom: 2rem;
+}
+.container .result .last_paragraph {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.container .sumary_card {
+  padding: 0rem 5rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+.container .sumary_card h3 {
+  margin-bottom: 3rem;
+  color: hsl(224, 30%, 27%);
+}
+.container .sumary_card .Summary_component {
+  padding: 1.4rem 1rem;
+  margin-bottom: 1.8rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .sumary_card .Summary_component .icon_desc {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+.container .sumary_card .Summary_component .percentage {
+  color: hsl(241, 100%, 89%);
+}
+.container .sumary_card .btn {
+  margin-top: 1.8rem;
+  padding: 1.4rem 0rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 30%, 27%);
+  text-decoration: none;
+}
+.container .sumary_card .btn:hover {
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.container .sumary_card .btn:visited {
+  color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 720px) {
+  body {
+    align-items: flex-start;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .container .result {
+    border-radius: 0;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+  }
+}
+@media (max-width: 300px) {
+  html {
+    font-size: 56.25%;
+  }
+}/*# sourceMappingURL=styles.css.map */

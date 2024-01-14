@@ -11,9 +11,8 @@ html {
 }
 
 body {
-  background: url(../assets/images/background-pattern-desktop.svg) center
-      top/100% auto no-repeat,
-    $lightPink;
+  background: url("../assets/images/background-pattern-desktop.svg") center top /
+    100% 34% no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
