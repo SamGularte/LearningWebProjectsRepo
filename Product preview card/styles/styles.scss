@@ -1,0 +1,126 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: $font;
+}
+
+body {
+  font-size: 1.4rem;
+  background-color: $cream;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 55rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: $white;
+
+  .product_img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .product_img2 {
+    display: none;
+  }
+
+  .product_description {
+    padding: 2rem;
+    font-family: $font;
+    color: $darkGrayishBlue;
+
+    .product_type {
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+    }
+
+    .product_name {
+      margin: 2rem 0;
+      font-family: $productNameFont;
+      color: $veryDarkBlue;
+      font-size: 3.7rem;
+      line-height: 3.7rem;
+      font-weight: 700;
+    }
+
+    .product_about {
+      margin-bottom: 2rem;
+    }
+
+    .price_container {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      font-family: $productNameFont;
+      margin-bottom: 2rem;
+
+      .actual_price {
+        color: $darkCyan;
+        font-size: 3.7rem;
+        font-weight: 700;
+      }
+
+      .full_price {
+        text-decoration: line-through;
+      }
+    }
+
+    .cartBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.4rem;
+      border-radius: 0.7rem;
+      gap: 1.4rem;
+      background-color: $darkCyan;
+      color: $white;
+      text-decoration: none;
+    }
+
+    .cartBtn:hover {
+      background-color: $darkerCyan;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 4rem 2rem;
+    align-items: flex-start;
+  }
+  .container {
+    max-width: 50rem;
+    grid-template-columns: 1fr;
+
+    .product_img1 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+    }
+
+    .product_img2 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}
