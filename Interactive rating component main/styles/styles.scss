@@ -1,0 +1,47 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: $font;
+}
+
+body {
+  font-size: 1.5rem;
+  color: $mediumGrey;
+  background-color: $veryDarkBlue;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(215, 20%, 15%),
+    hsl(215, 24%, 10%)
+  );
+  max-width: 41rem;
+  padding: 3.2rem;
+  border-radius: 3rem;
+}
+
+.star {
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: $darkBlue;
+}
+
+.title {
+  margin-top: 2rem;
+  color: $white;
+  font-size: 3rem;
+}
